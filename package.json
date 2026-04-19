@@ -1,0 +1,47 @@
+{
+  "name": "vitest-pulumi-mocks-aws",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vitest-ready mock system covering 100% of @pulumi/aws resource classes.",
+  "license": "MIT",
+  "author": "Lexmata LLC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lexmata/vitest-pulumi-mocks-aws.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "fetch:schema": "tsx scripts/fetch-schema.ts",
+    "generate": "tsx scripts/generate.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pulumi/aws": "^6.66.2",
+    "@pulumi/pulumi": "^3.142.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^2.1.9",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

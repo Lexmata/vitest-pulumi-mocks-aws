@@ -1,0 +1,6 @@
+node_modules
+dist
+.schema-cache
+*.tsbuildinfo
+.pnpm-store
+coverage
