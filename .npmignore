@@ -1,0 +1,17 @@
+.schema-cache
+coverage
+tests
+scripts
+node_modules
+
+tsconfig.json
+tsconfig.build.json
+vitest.config.ts
+
+.gitignore
+.github
+CLAUDE.md
+
+*.tsbuildinfo
+*.log
+.DS_Store
